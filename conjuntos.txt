@@ -1,0 +1,53 @@
+def union(a, b):
+    c = a | b
+    return c
+
+def interseccion(a, b):
+    c = a & b
+    return c
+
+def diferencia(a, b):
+    c = a - b
+    return c
+
+def diferencia_simetrica(a, b):
+    c = a ^ b
+    return c
+
+def es_primo(num):
+    for n in range(2, num):
+        if num % n == 0:
+            return False
+    return True
+
+A = set()
+for i in range(26):
+    if i % 2 == 1:
+        A.add(i)
+print("A = ", A)
+
+B = set()
+for i in range(6,20):
+    B.add(i)
+    
+print("B = ", B)
+
+C = set([1,4,7,8,12,16,18,21])
+print("C = ", C)
+
+D = set()
+for i in range(2,51):
+    if es_primo(i) == True:
+        D.add(i)
+print("D = ", D)
+
+print("")
+op_1 = interseccion(A, diferencia_simetrica(B,D))
+print("A&(B^D) = ",op_1)
+op_2 = union(interseccion(B,C), D)
+print("(B&C)|D = ",op_2)
+op_3 = diferencia(union(A,C), B)
+print("(A|C)-B) = ",op_3)
+op_4 = diferencia_simetrica(diferencia(B,C), interseccion(A,C))
+print("(B-C)^(A&C) = ",op_4)
+        
