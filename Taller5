@@ -1,0 +1,51 @@
+Ayer dejé mi teléfono celular olvidado en el autobús, por lo que lo reemplacé rápidamente por un teléfono con menor capacidad de memoria. 
+En mi teléfono anterior tenía instaladas 18 aplicaciones y ahora solamente puedo seleccionar 8.
+
+a) ¿De cuántas formas puedo realizar esta selección?
+
+Como no importa el orden y no se a seleccionar una app más de una vez:
+18C8 = (18!)/8!(10-8)! = 43758
+
+b) Si deseo mantener instaladas 3 de las 5 aplicaciones de redes sociales que tenía y otras 5 aplicaciones de las restantes, 
+¿de cuántas formas puedo seleccionar ahora?
+
+Siguiendo la misma lógica: 
+
+Redes sociales: 5C3 = (5!)/3!(5-3)! = 10
+
+Aplicaciones restantes: 13C5 = 13!/5!(13-5)! = 1287
+
+Total de formas: 10 x 1287 = 12870
+
+Una baraja común de 52 cartas consiste en cuatro palos (tréboles, diamantes, corazones y espadas) con 13 denominaciones cada uno (as, de 2 a 10, jack [J],
+reina [Q] y rey [K]).
+a) ¿Cuántas manos de póquer (sin ordenar) de cinco cartas, seleccionadas de una baraja común de 52 cartas, existen?
+
+Como no importa el orden: 52C5 = 52!/5!(52-5)! = 2598960
+
+b) ¿Cuántas manos de póquer contienen cartas todas del mismo palo? 
+
+13C5 = 13!/5!(13-5)! = 1287 
+1287 x 4 = 5148
+
+c) ¿Cuántas manos de póquer contienen tres cartas de una denominación y dos de
+una segunda denominación?
+
+Hay 13 denominaciones de cartas en una baraja estándar de póker. Para elegir las dos denominaciones necesarias para un full house se necesita:
+
+Elegir una denominación para el trío (13 opciones).
+Elegir una denominación para el par (12 opciones, ya que no puede ser la misma que la del trío).
+Elegirlas cartas para el trío y el par:
+Una vez que se hayan elegido las dos denominaciones, se necesita seleccionar las cartas para el trío y el par. Para el trío, se tienen 4 cartas disponibles de cada denominación (una de cada palo), y para el par, se tienen 4 cartas disponibles de cada denominación (una de cada palo). Entonces, el número de formas de elegir las cartas sería:
+
+Para el trío: 4 opciones para el primer trío * 3 opciones para el segundo trío * 2 opciones para el tercer trío = 4C3 = 4
+Para el par: 4 opciones para el primer par * 3 opciones para el segundo par = 4C2 = 6
+Calculando el número total de manos de full house:
+Multiplicamos el número de formas de elegir las denominaciones por el número de formas de elegir las cartas para el trío y el par:
+
+Número total de manos de full house = (13 opciones para las denominaciones) * (4 opciones para el trío) * (6 opciones para el par) = 13 * 4 * 6 = 312 manos de full house.
+
+Entonces, hay 312 manos diferentes de full house en el póker.
+
+
+
